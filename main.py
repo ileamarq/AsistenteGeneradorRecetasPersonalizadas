@@ -36,7 +36,7 @@ if st.button('Consultar'):
   response = requests.post(url_completa, json=data, headers=headers)
   
   if response.status_code == 200:
-   st.success("Recetas generada exitosamente")
+   st.success("Recetas generadas exitosamente")
    
    result = response.json()
   # Imprimir la respuesta
